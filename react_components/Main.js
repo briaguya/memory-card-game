@@ -30,11 +30,17 @@ var Gameboard = React.createClass({
       return copy;
     };
 
-    var cards = shuffle().map(function (card) {
+    var handleClick = function () {
+      console.log("flip1");
+      setTimeout(100);
+      console.log("flip2");
+    };
+
+    var cards = shuffle().map(function (card, i) {
       return (
-        <Card card={card}/>
+        <Card card={card} key={i} onClick={this.handleClick} ref={'card' + i}/>
       );
-    });
+    }, this);
 
     return (
       <div className="container">
