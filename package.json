@@ -1,0 +1,50 @@
+{
+  "name": "memory-card-game",
+  "version": "0.0.1",
+  "description": "A memory card matching game written in React.js.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest",
+    "ci": "npm install && npm test",
+    "postinstall": "grunt default && bower install"
+  },
+  "engines": {
+    "node": "^0.10.31"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lynnaloo/memory-card-game.git"
+  },
+  "keywords": [
+    "reactjs",
+    "memory",
+    "cards",
+    "game"
+  ],
+  "author": "Linda Nichols",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lynnaloo/memory-card-game/issues"
+  },
+  "homepage": "https://github.com/lynnaloo/memory-card-game",
+  "dependencies": {
+    "express": "4.1.x",
+    "jquery": "2.1.1",
+    "react": "^0.11.1",
+    "react-bootstrap": "^0.11.1",
+    "bower": "^1.3.12",
+    "grunt-cli": "^0.1.13",
+    "browserify": "^5.11.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-react": "^0.9.0",
+    "grunt-bower-install": "^1.6.0",
+    "grunt-jsxhint": "^0.3.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.1.18",
+    "react-tools": "^0.11.1"
+  }
+}
